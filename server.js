@@ -15,7 +15,7 @@ Express will serve static content from the public directory
 
 server.use(express["static"](__dirname + '/public'));
 
-server.get('/getAppInfo', function(req, res) {
+server.get('/getFreeAppInfo', function(req, res) {
   return getWebsiteHtml('http://www.amazon.com/mobile-apps/b?ie=UTF8&node=2350149011', function(html) {
     var $, fullDescription, link, title;
     $ = cheerio(html);
@@ -43,7 +43,8 @@ server.get('/getAppInfo', function(req, res) {
         youSave: youSave,
         rated: rated,
         reviews: reviews,
-        imageSrc: imageSrc
+        imageSrc: imageSrc,
+        link: link
       });
     });
   });

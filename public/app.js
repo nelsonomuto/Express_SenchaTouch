@@ -23,13 +23,22 @@ Ext.application({
     name: 'Notifier',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Notifier.store.FreeAppInfo'
     ],
-
+    
+    controllers: [
+        'Main'
+    ],
+    
     views: [
         'Main'
     ],
-
+    
+    stores: [
+        'FreeAppInfo'
+    ],
+    
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -49,6 +58,7 @@ Ext.application({
     },
 
     launch: function() {
+        window.App = this;
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 

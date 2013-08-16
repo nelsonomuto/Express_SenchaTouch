@@ -9,7 +9,7 @@ Express will serve static content from the public directory
 ###
 server.use express.static __dirname + '/public'
 
-server.get '/getAppInfo', ( req, res ) ->
+server.get '/getFreeAppInfo', ( req, res ) ->
   getWebsiteHtml 'http://www.amazon.com/mobile-apps/b?ie=UTF8&node=2350149011', ( html ) ->
     $ = cheerio html
 
@@ -41,6 +41,7 @@ server.get '/getAppInfo', ( req, res ) ->
         rated: rated
         reviews: reviews
         imageSrc: imageSrc
+        link: link
 
 ###
 Navigate to localhost:3000 to hit /public/index.html
