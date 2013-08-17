@@ -5,8 +5,7 @@ The purpose of this application is for learning and demonstration.
 
 Running the app locally: 
 
-#### Requirements: ####
-You must first [install nodejs] (http://nodejs.org/download/).
+Before proceeding you must first [install nodejs] (http://nodejs.org/download/).
 
 #### 1. Install app dependencies ####
 In the command line go to the root folder (Express_SenchaTouch) which is the path where the server.js file exists and enter command 'npm install'.
