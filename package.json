@@ -1,5 +1,6 @@
 {
   "name": "notifierApp",
+  "version": "0.0.2",
   "description": "JavaScript's functional programming helper library.",
   "homepage": "http://omuto.com",
   "keywords": [
@@ -13,12 +14,12 @@
     "url": "git@github.com:nelsonomuto/NodeJS-Sencha-Touch-Demo.git"
   },
   "devDependencies": {
-    "grunt": "0.4.x"
+    "grunt": "~0.4"
   },
   "dependencies": {
     "http": "*",
     "underscore": "*",
-    "express": "3.3.x",
-    "cheerio": "0.12.x"
+    "express": "~3.3",
+    "cheerio": "~0.12.1"
   }
 }
