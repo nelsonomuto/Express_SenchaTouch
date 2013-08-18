@@ -3,7 +3,7 @@
 #################
 
 #uncomment to check if causing heroku compile fail
-#/node_modules
+/node_modules
 
 #################
 ## Eclipse
