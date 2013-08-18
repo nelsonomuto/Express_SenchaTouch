@@ -7,14 +7,14 @@ Ext.define 'Notifier.controller.Main',
   ]
   
   init: ->
-    Ext.device.Notification.show
-      title: 'Verification'
-      message: 'Testing Notification'
-      buttons: Ext.MessageBox.OKCANCEL
-      callback: (button) ->
-        if (button is "ok") 
-          console.log('Verified')
-        else 
-          console.log('Nope')
-          
-    Ext.device.Notification.vibrate()
+#    Ext.device.Notification.show
+#      title: 'Verification'
+#      message: 'Testing Notification'
+#      buttons: Ext.MessageBox.OKCANCEL
+#      callback: (button) ->
+#        if (button is "ok") 
+#          console.log('Verified')
+#        else 
+#          console.log('Nope')
+#          
+#    Ext.device.Notification.vibrate()
