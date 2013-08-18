@@ -2,7 +2,6 @@
 ## Javascript
 #################
 
-#uncomment to check if causing heroku compile fail
 /node_modules
 
 #################
