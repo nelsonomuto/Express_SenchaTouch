@@ -1,6 +1,8 @@
 This is a simple notification app designed with *Node.js* server-side, *Sencha Touch* front-end.
 The purpose of this application is for learning and demonstration.
 
+The app is published on heroku: [http://amazon-free-app-of-the-day.herokuapp.com/] (http://amazon-free-app-of-the-day.herokuapp.com/)
+
    **Some of the javascript was generated using coffee-script.*
 
 Running the app locally: 
