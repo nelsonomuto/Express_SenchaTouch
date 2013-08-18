@@ -45,7 +45,7 @@ server.get '/getFreeAppInfo', ( req, res ) ->
 ###
 Navigate to localhost:3000 to hit /public/index.html
 ###
-server.listen 3000
+server.listen process.env.PORT or 3000
 
 ###
 Abstracting http get request

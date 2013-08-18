@@ -1,22 +1,24 @@
 {
-    "name": "notifierApp",
-    "version": "0.0.2",
-    "description": "JavaScript's functional programming helper library.",
-    "homepage": "http://omuto.com",
-    "keywords": [],
-    "author": {
-        "name": "Nelson Omuto",
-        "email": "nelsonomuto@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:nelsonomuto/NodeJS-Sencha-Touch-Demo.git"
-    },
-    "devDependencies": {
-        "grunt": "~0.4"
-    },
-    "dependencies": {
-        "express": "~3.3",
-        "cheerio": "~0.12.1"
-    }
+  "name": "notifierApp",
+  "version": "0.0.2",
+  "description": "JavaScript's functional programming helper library.",
+  "homepage": "http://omuto.com",
+  "keywords": [],
+  "author": {
+    "name": "Nelson Omuto",
+    "email": "nelsonomuto@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nelsonomuto/NodeJS-Sencha-Touch-Demo.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "express": "~3.3.5",
+    "cheerio": "~0.12.1"
+  },
+  "dependencies": {
+    "express": "~3.3",
+    "cheerio": "~0.12.1"
+  }
 }
