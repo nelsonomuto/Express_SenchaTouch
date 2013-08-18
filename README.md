@@ -12,7 +12,7 @@ Before proceeding you must first [install nodejs] (http://nodejs.org/download/).
 #### 1. Install app dependencies ####
 In the command line go to the root folder (Express_SenchaTouch) which is the path where the server.js file exists and enter command 'npm install'.
     
-    C:\Path\to\Express_SenchaTouch> npm install
+    C:\Path\to\Express_SenchaTouch> npm install --save-dev
 
 #### 2. Run the server.js file ####
 In the command line go to the root folder (Express_SenchaTouch) which is the path where the server.js file exists and enter command 'node server.js'.
