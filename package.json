@@ -16,7 +16,6 @@
     "grunt": "~0.4"
   },
   "dependencies": {
-    "http": "*",
     "underscore": "*",
     "express": "~3.3",
     "cheerio": "~0.12.1",
