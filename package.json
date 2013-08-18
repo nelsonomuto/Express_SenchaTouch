@@ -8,10 +8,6 @@
         "name": "Nelson Omuto",
         "email": "nelsonomuto@gmail.com"
     },
-    "engines": {
-        "node": "*",
-        "npm": "*"
-    },
     "repository": {
         "type": "git",
         "url": "git@github.com:nelsonomuto/NodeJS-Sencha-Touch-Demo.git"
