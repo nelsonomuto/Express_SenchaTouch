@@ -1,3 +1,7 @@
+/*
+Express will serve static content from the public directory
+*/
+
 var cheerio, express, getWebsiteHtml, http, server;
 
 express = require('express');
@@ -7,11 +11,6 @@ server = express();
 http = require('http');
 
 cheerio = require('cheerio');
-
-/*
-Express will serve static content from the public directory
-*/
-
 
 server.use(express["static"](__dirname + '/public'));
 

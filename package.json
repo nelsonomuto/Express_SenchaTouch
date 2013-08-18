@@ -3,8 +3,7 @@
   "version": "0.0.2",
   "description": "JavaScript's functional programming helper library.",
   "homepage": "http://omuto.com",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": {
     "name": "Nelson Omuto",
     "email": "nelsonomuto@gmail.com"
@@ -20,6 +19,7 @@
     "http": "*",
     "underscore": "*",
     "express": "~3.3",
-    "cheerio": "~0.12.1"
+    "cheerio": "~0.12.1",
+    "coffee-script": "~1.6.3"
   }
 }

@@ -1,12 +1,11 @@
-express = require 'express'
-server = express()
-http = require 'http'
-cheerio = require 'cheerio' 
-
-
 ###
 Express will serve static content from the public directory
 ###
+express = require 'express'
+server = express()
+http = require 'http'
+cheerio = require 'cheerio'
+
 server.use express.static __dirname + '/public'
 
 server.get '/getFreeAppInfo', ( req, res ) ->
