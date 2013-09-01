@@ -8,10 +8,9 @@ cheerio = require 'cheerio'
 
 server.use express.static __dirname + '/public'
 
-server.get '/getFreeAppInfo', ( req, res ) ->
-  getWebsiteHtml 'http://www.amazon.com/mobile-apps/b?ie=UTF8&node=2350149011', ( html ) ->
+server.get '/getFreeAppInfo', ( req, res ) ->  
+  getWebsiteHtml 'http://www.amazon.com/mobile-apps/b?ie=UTF8&node=2350149011', ( html ) ->    
     $ = cheerio html
-
     fullDescription = $.find('.fad-widget-footer-info').find('div').text()
     title = $.find('.fad-widget-footer-info').find('a').text()
 
@@ -51,13 +50,15 @@ server.listen process.env.PORT or 3000
 Abstracting http get request
 ###
 getWebsiteHtml = ( url, callback, scope ) ->
-  http.get url, ( urlResponse ) ->
+  req = http.get url, ( urlResponse ) ->
     urlResponse.setEncoding 'utf8'
     html = ''
     
     urlResponse.on 'data', (chunk) ->
-      html += chunk
-
-
+      html += chunk          
+      
     urlResponse.on 'end', ->
       callback.call scope, html
+  req.on 'error', ->
+      getWebsiteHtml url, callback, scope
+     

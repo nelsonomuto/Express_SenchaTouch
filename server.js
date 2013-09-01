@@ -62,7 +62,8 @@ Abstracting http get request
 
 
 getWebsiteHtml = function(url, callback, scope) {
-  return http.get(url, function(urlResponse) {
+  var req;
+  req = http.get(url, function(urlResponse) {
     var html;
     urlResponse.setEncoding('utf8');
     html = '';
@@ -72,5 +73,8 @@ getWebsiteHtml = function(url, callback, scope) {
     return urlResponse.on('end', function() {
       return callback.call(scope, html);
     });
+  });
+  return req.on('error', function() {
+    return getWebsiteHtml(url, callback, scope);
   });
 };
